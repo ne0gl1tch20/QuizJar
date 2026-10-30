@@ -1,5 +1,6 @@
 plugins {
     kotlin("multiplatform")
+    id("com.android.library")
 }
 
 kotlin {
@@ -13,4 +14,9 @@ kotlin {
             implementation(kotlin("test"))
         }
     }
+}
+
+android {
+    namespace = "com.jarrlyyy.quizjar.shared"
+    compileSdk = 36
 }

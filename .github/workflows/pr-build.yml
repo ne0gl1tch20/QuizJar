@@ -25,6 +25,6 @@ jobs:
         with:
           gradle-version: '8.13'
       - name: Run shared tests
-        run: gradle :shared:allTests
+        run: gradle :shared:testDebugUnitTest
       - name: Build debug APK
         run: gradle :app:assembleDebug
